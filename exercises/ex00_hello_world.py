@@ -1,4 +1,4 @@
 """Python Module 0: Hello World."""
-author: int = 730648328
+__author__ = "730648328"
 
 print("Hello, world.")
