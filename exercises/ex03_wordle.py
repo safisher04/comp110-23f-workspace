@@ -15,7 +15,7 @@ def contains_char(word: str, char: str) -> bool:
 
 
 def emojified(user_guess: str, secret: str) -> str:
-    """Determine the emoji representation of the users guess in comparison to the secret word"""
+    """Determine the emoji representation of the users guess in comparison to the secret word."""
     """Define variables"""
     emoji_result: str = ""
     i: int = 0
@@ -66,6 +66,6 @@ def main() -> None:
     print("X/6 - Sorry, try again tomorrow!")
 
 if __name__ == "__main__":
+    """Makes the main function usable on it's own"""
     main()
 
-    
