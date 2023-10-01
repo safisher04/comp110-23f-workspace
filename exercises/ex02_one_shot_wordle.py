@@ -1,4 +1,4 @@
-"""Ex01 - Wordle -One try Wordle!"""
+"""Ex02 - Wordle -One try Wordle!"""
 __author__ = "730648328"
 
 """Establishing variables used in the rest of my program"""
