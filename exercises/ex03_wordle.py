@@ -68,4 +68,3 @@ def main() -> None:
 if __name__ == "__main__":
     """Makes the main function usable on it's own."""
     main()
-
