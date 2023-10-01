@@ -1,8 +1,9 @@
 """Ex03 - Wordle - Full Program!"""
 __author__ = "730648328"
 
+
 def contains_char(word: str, char: str) -> bool:
-    """Search through a given word and return True if char is found and False if char isn't found"""
+    """Search through a given word and return True if char is found and False if char isn't found."""
     assert len(char) == 1
     i: int = 0
     while i < len(word):
@@ -15,7 +16,6 @@ def contains_char(word: str, char: str) -> bool:
 
 def emojified(user_guess: str, secret: str) -> str:
     """Determine the emoji representation of the users guess in comparison to the secret word"""
-    
     """Define variables"""
     emoji_result: str = ""
     i: int = 0
@@ -40,7 +40,7 @@ def emojified(user_guess: str, secret: str) -> str:
 
 
 def input_guess(length: int) -> str:
-    """Prompt the user for a word until the user gives a word of the approriate length"""
+    """Prompt the user for a word until the user gives a word of the approriate length."""
     user_guess: str = input(f"Enter a { length } character word: ")
     while len(user_guess) != length:
         user_guess = input(f"That wasn't { length } chars! Try again: ")
@@ -48,8 +48,7 @@ def input_guess(length: int) -> str:
 
 
 def main() -> None:
-    """Give the user 6 tries to guess the secret word giving them hints in the form of an emoji string"""
-
+    """Give the user 6 tries to guess the secret word giving them hints in the form of an emoji string."""
     """Define variables"""
     attempts: int = 1
     secret: str = "codes"
@@ -68,3 +67,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+    
