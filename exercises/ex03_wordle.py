@@ -52,17 +52,22 @@ def main() -> None:
     """Define variables"""
     attempts: int = 1
     secret: str = "codes"
+    game_won: bool = False
 
     """Run the game"""
-    while attempts <= 6:
+    while (attempts <= 6) and (game_won is False):
         print(f"=== Turn { attempts }/6 ===")
         guess: str = input_guess(len(secret))
         emoji_guess: str = emojified(guess, secret)
         print(emoji_guess)
         if guess == secret:
             print(f"You won in { attempts }/6 turns!")
-        attempts += 1
-    print("X/6 - Sorry, try again tomorrow!")
+            game_won = True
+        else:
+            attempts += 1
+            game_won = False
+    if (game_won is False) and (attempts == 7):
+        print("X/6 - Sorry, try again tomorrow!")
 
 
 if __name__ == "__main__":
