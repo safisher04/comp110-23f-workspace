@@ -61,7 +61,6 @@ def main() -> None:
         print(emoji_guess)
         if guess == secret:
             print(f"You won in { attempts }/6 turns!")
-            SystemExit
         attempts += 1
     print("X/6 - Sorry, try again tomorrow!")
 
