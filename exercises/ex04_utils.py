@@ -1,6 +1,7 @@
 """Ex04 - Learning List Utility Functions!"""
 __author__ = "730648328"
 
+
 def all(int_list: list[int], num: int) -> bool:
     """Determines is all of the integers in a list are the same as a given integer."""
     """Return False if given an empty list."""
@@ -15,7 +16,6 @@ def all(int_list: list[int], num: int) -> bool:
             same = True
             i += 1
         else:
-            same = False 
             return same
     if same is True:
         return True
@@ -38,11 +38,15 @@ def max(int_list: list[int]) -> int:
 
 
 def is_equal(list_one: list[int], list_two: list[int]) -> bool:
+    """Determine is two given lists are identical."""
+    """Return false automatically if the two lists aren't the same length."""
     if len(list_one) != len(list_two):
         return False
+    """Establish needed variables for the function."""
     i: int = 0
     length: int = len(list_one)
     same: bool = True 
+    """Scan through list and check if the values in the two lists at matching indexes are identical."""
     while i < length:
         if list_one[i] == list_two[i]:
             same = True
