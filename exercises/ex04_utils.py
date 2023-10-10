@@ -16,9 +16,10 @@ def all(int_list: list[int], num: int) -> bool:
             same = True
             i += 1
         else:
+            same = False
             return same
     if same is True:
-        return True
+        return same
 
 
 def max(int_list: list[int]) -> int:
@@ -31,8 +32,10 @@ def max(int_list: list[int]) -> int:
     i: int = 0
     """Search through the list and find the greatest value."""
     while i < len(int_list):
-        if int_list[i] > max:
+        if int_list[i] >= max:
             max = int_list[i]
+            i += 1
+        else:
             i += 1
     return max
 
