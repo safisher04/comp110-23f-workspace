@@ -11,15 +11,13 @@ def all(int_list: list[int], num: int) -> bool:
     i: int = 0
     same: bool = True
     """Determine if every int in the list matches the given int and return True or False depending."""
-    while i < len(int_list):
+    while (i < len(int_list)) and (same is True):
         if int_list[i] == num:
             same = True
             i += 1
         else:
             same = False
-            return same
-    if same is True:
-        return same
+    return same
 
 
 def max(int_list: list[int]) -> int:
@@ -58,3 +56,15 @@ def is_equal(list_one: list[int], list_two: list[int]) -> bool:
             same = False
             return same
     return same
+
+
+def main() -> None:
+    """Check each of my functions to make sure they work properly."""
+    my_list: list[int] = [1, 2, 3,]
+    same: bool = all(my_list, 1)
+    print(same)
+
+
+if __name__ == "__main__":
+    """Make my chekcin function usable."""
+    main()
