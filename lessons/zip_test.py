@@ -11,14 +11,14 @@ def test_empty_zip() -> None:
     assert zip(key_list, val_list) == dict()
 
 
-def test_dict_length():
+def test_dict_length() -> None:
     """Length of the dictionary should match the length of the lists."""
     key_list: list[str] = ["monday", "tuesday", "wednesday", "thursday", "friday"]
     val_list: list[int] = [1, 2, 3, 4, 5]
     assert len(zip(key_list, val_list)) == 5
 
 
-def test_grocery_list():
+def test_grocery_list() -> None:
     """A grocery list should return the item and how many are needed."""
     key_list: list[str] = ["apples", "bananas", "eggs"]
     val_list: list[int] = [8, 6, 36]

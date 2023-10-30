@@ -6,9 +6,9 @@ leo: Turtle = Turtle()
 
 
 leo.penup()
-leo.goto(-150,-130)
+leo.goto(-150, -130)
 leo.pendown()
-leo.color(250,250,250)
+leo.color(250, 250, 250)
 leo.speed(50)
 leo.hideturtle()
 
@@ -22,18 +22,18 @@ leo.end_fill()
 
 
 bob: Turtle = Turtle()
-bob.color(0,0,0)
+bob.color(0, 0, 0)
 bob.penup()
-bob.goto(-150,-130)
+bob.goto(-150, -130)
 bob.pendown()
 bob.speed(50)
 bob.hideturtle()
 
-i: int = 0
-while (i<3):
+ind: int = 0
+while (ind < 3):
     bob.forward(300)
     bob.left(120)   
-    i += 1 
+    ind += 1 
 
 side_len: int = 300
 angle: int = 121
