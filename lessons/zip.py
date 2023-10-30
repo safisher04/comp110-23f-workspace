@@ -13,6 +13,3 @@ def zip(keys: list[str], vals: list[int]) -> dict[str, int]:
         my_dict[keys[i]] = vals[i]
         i += 1
     return my_dict
-
-
-print(zip(["Happy", "Tuesday"], [1, 2]))
