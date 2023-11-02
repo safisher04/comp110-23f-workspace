@@ -14,7 +14,7 @@ leo.hideturtle()
 
 leo.begin_fill()
 i: int = 0
-while (i<3):
+while (i < 3):
     leo.forward(300)
     leo.left(120)   
     i += 1 
@@ -39,7 +39,7 @@ side_len: int = 300
 angle: int = 121
 
 i = 0
-while (i<33):
+while (i < 33):
     bob.forward(side_len)
     bob.left(angle)   
     i += 1 
