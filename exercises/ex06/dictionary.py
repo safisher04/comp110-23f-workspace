@@ -56,10 +56,7 @@ def count(my_list: list[str]) -> dict[str, int]:
 
 
 def alphabetizer(my_list: list[str]) -> dict[str, list[str]]:
-    """Organize a list by strings that start with the same letter.
-    
-    First duplicate the given list in all lower case.
-    """
+    """Organize a list by words with the same starting letter; uppercase or lowercase."""
     my_dict: dict[str, list[str]] = {}
     for elem in my_list:
         i: int = 0
